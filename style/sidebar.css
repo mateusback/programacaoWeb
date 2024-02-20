@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  padding: 0; margin: 0;
+  min-height: 100vh;
+}
+#side { flex-shrink: 0; width: 200px; }
+#main { flex-grow: 1; }
+
+
+#side a { display: block; width: 100%; }
+
+@media screen AND (max-width:768px) {
+  #side { width: 50px; }
+  #side .txt { display: none; }
+}
+
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+
+#side, #main { padding: 10px; }
+#side {
+  transition: width 0.3s;
+  background: #3d3d3d;
+}
+#main { background: #f2f2f2; }
+
+#side a, #side i {
+  color: #fff;
+  font-style: normal;
+  text-decoration: none;
+}
+#side a { margin-bottom: 20px; }
+@media screen AND (max-width:768px) {
+  #side a { text-align: center; }
+  #side i.ico { 
+    font-size: 30px;
+  }
+}
