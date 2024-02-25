@@ -3,3 +3,10 @@
     margin: 40px;
     background-color: D1D1D1;
 }
+
+#centered-image{
+    display: block;
+    margin-left: none;
+    margin-right: auto;
+    width: 20%;
+}
