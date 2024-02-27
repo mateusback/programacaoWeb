@@ -51,3 +51,15 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#iconsvg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}

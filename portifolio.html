@@ -6,6 +6,7 @@
     <title>Portfólio</title>
     <link rel="stylesheet" href="style/sidebar.css">
     <link rel="stylesheet" href="style/estilo.css">
+    <link rel="stylesheet" href="style/card.css">
   </head>
   <body>
     <header id="side">
@@ -29,7 +30,7 @@
     <main id="main">
       <section>
         <h1>Portfólio</h1>
-        <div>
+        <div class="clear-fix">
           <img class = "foto-minha" src="img\foto-pessoal.png" alt="Literalmente Eu">
           <div class="obre-mim">
             teste
@@ -42,38 +43,82 @@
       <section id="Projetos Pessoais">
           <h2>Projetos Pessoais</h2>
           <div id="Farm Invaders">
-            <h3>Farm Invaders</h3>
-            <p>Projeto de jogo eletrônico desenvolvido durante as aulas de Programação Orientada a Objetos do curso de Engenharia de Software ministradas no Instituto Federal do Paraná. </p>
-            <p>A ideia inicial do projeto era ser um jogo no estilo Space Invaders (1978), mas com o desenrolar do desenvolvimento, foram aplicadas mecânicas de outros jocos como Vampire Survivor e The Binding of Issac.</p>
-            <p>O objetivo principal deste projeto foi compreender e fixar elementos básicos de programação orientada a objetos.</p>
-            <p>Tecnologias utilizadas:
-              <img id="iconsvg" src="img\icons\java.svg" alt="Java">
-              <img id="iconsvg" src="img\icons\postgres.svg" alt="Postgres">
-              <img id="iconsvg" src="img\icons\git.svg" alt="Git">
-            </p>
-            <p><img id="centered-image" src="img\space-invaders.jpg" alt="Imagem do jogo"></p>
-            <p><img id="iconsvg" src="img\icons\github.svg" alt="github"><a
-                href="https://github.com/mateusback/SpaceInvadersLike">Farm Invaders </a></p>
-          </div>
-
-          <div id="Portal do Aluno">
-            <h3>Portal do Aluno</h3>
-            <p>Projeto de um portal do aluno para a UniFatecie desenvolvido em algumas semanas em grupo, o portal teria informações sobre faltas, matriculas, alunos, materias, etc.</p>
-            <p>O objetivo principal deste projeto foi nos desafiar e aprender os princiapis conceitos de JavaSpring, arquitetura e organização de projetos.</p>
-            <p>Tecnologias utilizadas:
-              <img id="iconsvg" src="img\icons\springboot.svg" alt="SpringBoot">
-              <img id="iconsvg" src="img\icons\java.svg" alt="Java">
-              <img id="iconsvg" src="img\icons\mysql.svg" alt="MySql">
-              <img id="iconsvg" src="img\icons\git.svg" alt="Git">
-              <img id="iconsvg" src="img\icons\jira.svg" alt="Jira">
-            </p>
-            <p>
-              <img id="centered-image" src="img\dashboard.png" alt="Exemplo da dashboard utilizada">
-              (Dashboard de exemplo, não é a dashboard utilizada no projeto)
-            </p>
-            <p><img id="iconsvg" src="img\icons\github.svg" alt="github"><a
-                href="https://github.com/dnllcs/portal-do-aluno">Portal do Aluno </a></p>
-          </div>
+            <ul class="cards">
+              <li>
+                <a href="https://github.com/mateusback/SpaceInvadersLike" class="card">
+                  <img src="img/space-invaders.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="card__header-text">
+                        <h3 class="card__title">Farms Invaders</h3>
+                      </div>
+                    </div>
+                      <p class="card__description">Projeto de jogo eletrônico desenvolvido durante as aulas de Programação Orientada a Objetos
+                      do curso de Engenharia de Software ministradas no Instituto Federal do Paraná. <br>
+                      A ideia inicial do projeto era ser um jogo no estilo Space Invaders (1978), mas com o desenrolar do desenvolvimento,
+                      foram aplicadas mecânicas de outros jogos como Vampire Survivor e The Binding of Issac. <br>
+                      O objetivo principal deste projeto foi compreender e fixar elementos básicos de programação orientada a objetos.</p>
+                      <p class="card__description">Tecnologias utilizadas:
+                        <img id="iconsvg" src="img\icons\java.svg" alt="Java">
+                        <img id="iconsvg" src="img\icons\postgres.svg" alt="Postgres">
+                        <img id="iconsvg" src="img\icons\git.svg" alt="Git">
+                      </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/dnllcs/portal-do-aluno" class="card">
+                  <img src="img\dashboard.png" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="card__header-text">
+                        <h3 class="card__title">Portal do Aluno</h3>
+                      </div>
+                    </div>
+                      <p class="card__description">Projeto de um portal do aluno para a UniFatecie desenvolvido em algumas semanas em grupo, o portal teria informações
+                        sobre faltas, matriculas, alunos, materias, etc. <br>
+                        O objetivo principal deste projeto foi nos desafiar e aprender os princiapis conceitos de JavaSpring, arquitetura e organização de projetos.</p>
+                      <p class="card__description">Tecnologias utilizadas:
+                        <img id="iconsvg" src="img\icons\springboot.svg" alt="SpringBoot">
+                        <img id="iconsvg" src="img\icons\java.svg" alt="Java">
+                        <img id="iconsvg" src="img\icons\mysql.svg" alt="MySql">
+                        <img id="iconsvg" src="img\icons\git.svg" alt="Git">
+                        <img id="iconsvg" src="img\icons\jira.svg" alt="Jira">
+                      </p>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/mateusback/separarPDF" class="card">
+                  <img src="img\separador-pdf.png" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="card__header-text">
+                        <h3 class="card__title">Separador de PDF</h3>
+                      </div>
+                    </div>
+                      <p class="card__description">Projeto simples de um separador de PDF em console, desenolvido durante o primeiro ano do curso de Engenharia de
+                        Software.<br>
+                        O objetivo principal deste projeto foi fixar conhecimentos de python e manipulação de arquivos, além de agilizar
+                        alguns processos no trabalho.</p>
+                      <p class = card__description>Tecnologias utilizadas:
+                        <img id="iconsvg" src="img\icons\python.svg" alt="Python">
+                      </p>
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
           
           <div id="Separador de PDF">
             <h3>Separador de PDF</h3>

@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .hidden{
   display: none;
 }
@@ -61,11 +62,6 @@ body {
   color: #fff;
   font-style: normal;
   text-decoration: none;
-}
-#iconsvg{
-  width: 1%;
-  height: 1%;
-  margin-right: 5px;
 }
 
 #side a {
