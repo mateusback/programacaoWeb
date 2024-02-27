@@ -10,3 +10,44 @@
     margin-right: auto;
     width: 20%;
 }
+
+.site-header, .site-footer{
+    background-color: lightgray;
+    color: black;
+}
+
+.main-navigation{
+    padding: 0 15px; 
+}
+
+.main-navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.main-navigation a{
+    color: hotpink;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.foto-minha{
+    border-radius: 50%;
+    max-width: 300px;
+    min-width: 100px;
+    width: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+
+.sobre-mim{
+    display: inline-block;
+    vertical-align: middle;
+}

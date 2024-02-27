@@ -2,98 +2,124 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style/sidebar.css">
     <link rel="stylesheet" href="style/estilo.css">
   </head>
   <body>
-    <div id="side">
+    <header id="side">
       <h3>Portfólio</h3>
-      <a href="#Projetos Pessoais">
-        <i class="ico">&#128125;</i>
-        <i class="txt">Projetos Pessoais</i>
-      </a>
-      <a href="#Projetos Profissionais">
-        <i class="ico">&#128214;</i>
-        <i class="txt">Projetos Profissionais</i>
-      </a>
-      <a href="#">
-        <i class="ico">&#128125;</i>
-        <i class="txt">Teste 2</i>
-      </a> 
-    </div>
-    <div id="main">
-      <h1>Portfólio</h1>
-      <div>
-        <p class="ico"> &#128102; - Mateus Back </p>
-        <p class="ico"> &#128231; - mateusfback14@gmail.com </p>        
-      </div>
-      <div id="Projetos Pessoais">
-        <h2>Projetos Pessoais</h2>
-        <div id="Farm Invaders">
-          <h3>Farm Invaders</h3>
-          <p>Projeto de jogo eletrônico desenvolvido durante as aulas de Programação Orientada a Objetos do curso de Engenharia de Software ministradas no Instituto Federal do Paraná. </p>
-          <p>A ideia inicial do projeto era ser um jogo no estilo Space Invaders (1978), mas com o desenrolar do desenvolvimento, foram aplicadas mecânicas de outros jocos como Vampire Survivor e The Binding of Issac.</p>
-          <p>O objetivo principal deste projeto foi compreender e fixar elementos básicos de programação orientada a objetos.</p>
-          <p>Tecnologias utilizadas: 
-            <img id="iconsvg" src="img\icons\java.svg" alt="Java"> 
-            <img id="iconsvg" src="img\icons\postgres.svg" alt="Postgres">
-            <img id="iconsvg" src="img\icons\git.svg" alt="Git">
-          </p>
-          <p><img id="centered-image" src="img\space-invaders.jpg" alt="Imagem do jogo"></p>
-          <p><img id="iconsvg" src="img\icons\github.svg" alt="github"><a href="https://github.com/mateusback/SpaceInvadersLike">Farm Invaders </a></p>
+      <nav>
+        <a href="#Projetos Pessoais">
+          <i class="ico">&#128125;</i>
+          <i class="txt">Projetos Pessoais</i>
+        </a>
+        <a href="#Projetos Profissionais">
+          <i class="ico">&#128214;</i>
+          <i class="txt">Projetos Profissionais</i>
+        </a>
+        <a href="#">
+          <i class="ico">&#128125;</i>
+          <i class="txt">Teste 2</i>
+        </a> 
+      </nav>
+    </header>
+
+    <main id="main">
+      <section>
+        <h1>Portfólio</h1>
+        <div>
+          <img class = "foto-minha" src="img\foto-pessoal.png" alt="Literalmente Eu">
+          <div class="obre-mim">
+            teste
+            <p class="ico"> &#128102; - Mateus Back </p>
+            <p class="ico"> &#128231; - mateusfback14@gmail.com </p>
+          </div>
         </div>
-        <div id="Protal do Aluno">
-          <h3>Portal do Aluno</h3>
-          <p>Projeto de um portal do aluno para a UniFatecie desenvolvido em algumas semanas em grupo, o portal teria informações sobre faltas, matriculas, alunos, materias, etc.</p>
-          <p>O objetivo principal deste projeto foi nos desafiar e aprender os princiapis conceitos de JavaSpring, arquitetura e organização de projetos.</p>
-          <p>Tecnologias utilizadas: 
-            <img id="iconsvg" src="img\icons\springboot.svg" alt="SpringBoot"> 
-            <img id="iconsvg" src="img\icons\java.svg" alt="Java">
-            <img id="iconsvg" src="img\icons\mysql.svg" alt="MySql">
+      </section>
+
+      <section id="Projetos Pessoais">
+          <h2>Projetos Pessoais</h2>
+          <div id="Farm Invaders">
+            <h3>Farm Invaders</h3>
+            <p>Projeto de jogo eletrônico desenvolvido durante as aulas de Programação Orientada a Objetos do curso de Engenharia de Software ministradas no Instituto Federal do Paraná. </p>
+            <p>A ideia inicial do projeto era ser um jogo no estilo Space Invaders (1978), mas com o desenrolar do desenvolvimento, foram aplicadas mecânicas de outros jocos como Vampire Survivor e The Binding of Issac.</p>
+            <p>O objetivo principal deste projeto foi compreender e fixar elementos básicos de programação orientada a objetos.</p>
+            <p>Tecnologias utilizadas:
+              <img id="iconsvg" src="img\icons\java.svg" alt="Java">
+              <img id="iconsvg" src="img\icons\postgres.svg" alt="Postgres">
+              <img id="iconsvg" src="img\icons\git.svg" alt="Git">
+            </p>
+            <p><img id="centered-image" src="img\space-invaders.jpg" alt="Imagem do jogo"></p>
+            <p><img id="iconsvg" src="img\icons\github.svg" alt="github"><a
+                href="https://github.com/mateusback/SpaceInvadersLike">Farm Invaders </a></p>
+          </div>
+
+          <div id="Portal do Aluno">
+            <h3>Portal do Aluno</h3>
+            <p>Projeto de um portal do aluno para a UniFatecie desenvolvido em algumas semanas em grupo, o portal teria informações sobre faltas, matriculas, alunos, materias, etc.</p>
+            <p>O objetivo principal deste projeto foi nos desafiar e aprender os princiapis conceitos de JavaSpring, arquitetura e organização de projetos.</p>
+            <p>Tecnologias utilizadas:
+              <img id="iconsvg" src="img\icons\springboot.svg" alt="SpringBoot">
+              <img id="iconsvg" src="img\icons\java.svg" alt="Java">
+              <img id="iconsvg" src="img\icons\mysql.svg" alt="MySql">
+              <img id="iconsvg" src="img\icons\git.svg" alt="Git">
+              <img id="iconsvg" src="img\icons\jira.svg" alt="Jira">
+            </p>
+            <p>
+              <img id="centered-image" src="img\dashboard.png" alt="Exemplo da dashboard utilizada">
+              (Dashboard de exemplo, não é a dashboard utilizada no projeto)
+            </p>
+            <p><img id="iconsvg" src="img\icons\github.svg" alt="github"><a
+                href="https://github.com/dnllcs/portal-do-aluno">Portal do Aluno </a></p>
+          </div>
+          
+          <div id="Separador de PDF">
+            <h3>Separador de PDF</h3>
+            <p>Projeto simples de um separador de PDF em console, desenolvido durante o primeiro ano do curso de Engenharia de Software.</p>
+            <p>O objetivo principal deste projeto foi fixar conhecimentos de python e manipulação de arquivos, além de agilizar alguns processos no trabalho.</p>
+            <p>Tecnologias utilizadas:
+              <img id="iconsvg" src="img\icons\python.svg" alt="Python">
+            </p>
+            <p> <img id="centered-image" src="img\separador-pdf.png" alt="Separador de PDF"></p>
+            <p><img id="iconsvg" src="img\icons\github.svg" alt="github"><a
+                href="https://github.com/mateusback/separarPDF ">Separador de PDF </a></p>
+            </div>
+      </section>
+
+      <section id="Projetos Profissionais">
+        <h2>Projetos Profissionais</h2>
+        <div id="Senff - Nextage">
+          <h3>Senff - Nextage</h3>
+          <p>Na Nextage, trabalho como desenvolvedor fullstack, desenvolvendo e mantendo sistemas internos e externos,
+            utilizando diversas tecnologias.</p>
+          <p>Um dos principais porjetos em que atuo na Nextage é o banco Senff.</p>
+          <p>O banco Senff fornece soluções inovadoras para o varejo, de forma simples e ágil. Conectando empresas e
+            pessoas, possibilitando a realização de seus sonhos.</p>
+          <p>Meu principal objetivo nesse projeto é aprender e me consolidar como desenvolvedor, além de ajudar a empresa
+            a alcançar seus objetivos.</p>
+          <p>Tecnologias utilizadas:
+            <img id="iconsvg" src="img\icons\c-sharp.svg" alt="C#">
+            <img id="iconsvg" src="img\icons\dotnet.svg" alt=".Net">
+            <img id="iconsvg" src="img\icons\ruby.svg" alt="Ruby">
+            <img id="iconsvg" src="img\icons\rails.svg" alt="Ruby on Rails">
+            <img id="iconsvg" src="img\icons\react.svg" alt="React">
+            <img id="iconsvg" src="img\icons\postgres.svg" alt="Postgres">
+            <img id="iconsvg" src="img\icons\android.svg" alt="Android">
             <img id="iconsvg" src="img\icons\git.svg" alt="Git">
-            <img id="iconsvg" src="img\icons\jira.svg" alt="Jira">
           </p>
           <p>
-            <img id="centered-image" src="img\dashboard.png" alt="Exemplo da dashboard utilizada">
-            (Dashboard de exemplo, não é a dashboard utilizada no projeto)
+            <img id="centered-image" src="img\senff.png" alt="Exemplo da dashboard utilizada">
           </p>
-          <p><img id="iconsvg" src="img\icons\github.svg" alt="github"><a href="https://github.com/dnllcs/portal-do-aluno">Portal do Aluno </a></p>
-      </div>
-      <div id="Separador de PDF">
-        <h3>Separador de PDF</h3>
-        <p>Projeto simples de um separador de PDF em console, desenolvido durante o primeiro ano do curso de Engenharia de Software.</p>
-        <p>O objetivo principal deste projeto foi fixar conhecimentos de python e manipulação de arquivos, além de agilizar alguns processos no trabalho.</p>
-        <p>Tecnologias utilizadas: 
-          <img id="iconsvg" src="img\icons\python.svg" alt="Python"> 
-        </p>
-        <p> <img id="centered-image" src="img\separador-pdf.png" alt="Separador de PDF"></p>
-        <p><img id="iconsvg" src="img\icons\github.svg" alt="github"><a href="https://github.com/mateusback/separarPDF ">Separador de PDF </a></p>
-      </div>
-    
-    <div id="Projetos Profissionais">
-      <h2>Projetos Profissionais</h2>
-      <div id="Senff - Nextage">
-        <h3>Senff - Nextage</h3>
-        <p>Na Nextage, trabalho como desenvolvedor fullstack, desenvolvendo e mantendo sistemas internos e externos, utilizando diversas tecnologias.</p>
-        <p>Um dos principais porjetos em que atuo na Nextage é o banco Senff.</p>
-        <p>O banco Senff fornece soluções inovadoras para o varejo, de forma simples e ágil. Conectando empresas e pessoas, possibilitando a realização de seus sonhos.</p>
-        <p>Meu principal objetivo nesse projeto é aprender e me consolidar como desenvolvedor, além de ajudar a empresa a alcançar seus objetivos.</p>
-        <p>Tecnologias utilizadas: 
-          <img id="iconsvg" src="img\icons\c-sharp.svg" alt="C#"> 
-          <img id="iconsvg" src="img\icons\dotnet.svg" alt=".Net">
-          <img id="iconsvg" src="img\icons\ruby.svg" alt="Ruby">
-          <img id="iconsvg" src="img\icons\rails.svg" alt="Ruby on Rails">
-          <img id="iconsvg" src="img\icons\react.svg" alt="React">
-          <img id="iconsvg" src="img\icons\postgres.svg" alt="Postgres">
-          <img id="iconsvg" src="img\icons\android.svg" alt="Android">
-          <img id="iconsvg" src="img\icons\git.svg" alt="Git">
-        </p>
-        <p>
-          <img id="centered-image" src="img\senff.png" alt="Exemplo da dashboard utilizada">
-        </p>
-      </div>
-    </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+    </footer>
+
   </body>
 </html>
