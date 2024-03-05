@@ -1,53 +1,178 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title> Meu site </title>
-		<style>
-			h3{
-				color: green;
-			}
-			.primeira{
-				border: 1px solid black;
-				width: 15%;
-				height: 05%;
-				text-align: right;
-			}
-			.segunda{
-				border: 1px solid red;
-				width: 20%;
-				height: 06%;
-				text-align: center;
-			}
-		</style>
-		<link rel="stylesheet" href="style/estilo.css">
-	</head>
-	<body>
-		<div class="container"> 
-			<h1 style="color: red; font-size: 600%; margin: auto;">
-				Meu site
-			</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio de Mateus Back">
+    <meta name="keywords" content="Portfólio, Mateus Back, Desenvolvedor, Programador, Engenheiro de Software">
+    <meta name="author" content="Mateus Back">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="Portuguese">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="theme-color" content="#000000">
 
-			<h3> Titulo Menor </h3>
+    <meta property="og:title" content="Nome do Portfólio">
+    <meta property="og:description" content="Descrição do Portfólio">
+    <meta property="og:image" content="IMAGE_DA_PAGE">
+    <meta property="og:url" content="URL_PAGE">
+    <meta property="og:site_name" content="Portfólio do Mateus Back">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="stylesheet" href="style/card.css">
+  </head>
+  <body>
+    <header id="side">
+        <h3 class="h3">Portfólio</h3>
+      <nav>
+        <a href="#projetos-pessoais">
+          <i class="ico">&#128125;</i>
+          <i class="txt">Projetos Pessoais</i>
+        </a>
+        <a href="#projetos-profissionais">
+          <i class="ico">&#128214;</i>
+          <i class="txt">Projetos Profissionais</i>
+        </a>
+        <a href="#">
+          <i class="ico">&#128125;</i>
+          <i class="txt">Teste 2</i>
+        </a> 
+      </nav>
+    </header>
 
-			<h3 style = "color: blue"> Titulo Menor 2 </h3>
+    <main id="main" class="container">
+      <section>
+        <h1>Portfólio</h1>
+        <div class="clear-fix">
+          <img class = "foto-minha" src="img\foto-pessoal.png" alt="Literalmente Eu">
+          <div class="sobre-mim">
+            teste
+            <p class="ico"> &#128102; - Mateus Back </p>
+            <p class="ico"> &#128231; - mateusfback14@gmail.com </p>
+          </div>
+        </div>
+      </section>
 
-			<div class = "primeira">
-				Texto!
-			</div>
+      <section id="projetos-pessoais">
+          <h2>Projetos Pessoais</h2>
+          <div id="Farm Invaders">
+            <ul class="cards">
+              <li>
+                <a href="https://github.com/mateusback/SpaceInvadersLike" class="card">
+                  <img src="img/space-invaders.jpg" class="card-image" alt="" />
+                  <div class="card-overlay">
+                    <div class="card-header">
+                      <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="card-header-text">
+                        <h3 class="card-title">Farms Invaders</h3>
+                      </div>
+                    </div>
+                      <p class="card-description">Projeto de jogo eletrônico desenvolvido durante as aulas de Programação Orientada a Objetos
+                      do curso de Engenharia de Software ministradas no Instituto Federal do Paraná. <br>
+                      A ideia inicial do projeto era ser um jogo no estilo Space Invaders (1978). O objetivo principal deste projeto foi compreender e fixar elementos básicos de programação orientada a objetos.</p>
+                      <p class="card-description">Tecnologias utilizadas:
+                        <img id="iconsvg" src="img\icons\java.svg" alt="Java">
+                        <img id="iconsvg" src="img\icons\postgres.svg" alt="Postgres">
+                        <img id="iconsvg" src="img\icons\git.svg" alt="Git">
+                      </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/dnllcs/portal-do-aluno" class="card">
+                  <img src="img\dashboard.png" class="card-image" alt="" />
+                  <div class="card-overlay">
+                    <div class="card-header">
+                      <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="card-header-text">
+                        <h3 class="card-title">Portal do Aluno</h3>
+                      </div>
+                    </div>
+                      <p class="card-description">Projeto de um portal do aluno para a UniFatecie desenvolvido em algumas semanas em grupo, o portal teria informações
+                        sobre faltas, matriculas, alunos, materias, etc. <br>
+                        O objetivo principal deste projeto foi nos desafiar e aprender os princiapis conceitos de JavaSpring, arquitetura e organização de projetos.</p>
+                      <p class="card-description">Tecnologias utilizadas:
+                        <img id="iconsvg" src="img\icons\springboot.svg" alt="SpringBoot">
+                        <img id="iconsvg" src="img\icons\java.svg" alt="Java">
+                        <img id="iconsvg" src="img\icons\mysql.svg" alt="MySql">
+                        <img id="iconsvg" src="img\icons\git.svg" alt="Git">
+                        <img id="iconsvg" src="img\icons\jira.svg" alt="Jira">
+                      </p>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/mateusback/separarPDF" class="card">
+                  <img src="img\separador-pdf.png" class="card-image" alt="" />
+                  <div class="card-overlay">
+                    <div class="card-header">
+                      <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="card-header-text">
+                        <h3 class="card-title">Separador de PDF</h3>
+                      </div>
+                    </div>
+                      <p class="card-description">Projeto simples de um separador de PDF em console, desenolvido durante o primeiro ano do curso de Engenharia de
+                        Software.<br>
+                        O objetivo principal deste projeto foi fixar conhecimentos de python e manipulação de arquivos, além de agilizar
+                        alguns processos no trabalho.</p>
+                      <p class = "card-description">Tecnologias utilizadas:
+                        <img id="iconsvg" src="img\icons\python.svg" alt="Python">
+                      </p>
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+      </section>
 
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan sollicitudin faucibus. Nunc id neque nibh. Quisque metus enim, commodo nec dignissim nec, euismod vel quam. Aliquam vitae bibendum urna. Mauris at convallis massa, vel suscipit odio. Morbi facilisis sem ex, ac luctus arcu eleifend eu. Cras tristique ipsum vel dolor porta, eu tristique justo mollis. Ut viverra enim nec congue tempus. Donec vestibulum turpis urna, eu cursus leo accumsan ut. Curabitur id velit eu massa mattis feugiat. In at condimentum massa. Vestibulum mattis risus sit amet massa pharetra suscipit. Quisque sed cursus libero. Aliquam vehicula tincidunt erat sit amet pharetra. Duis dictum justo quam. Sed et velit diam.
-			</p>
+      <section id="projetos-profissionais">
+        <h2>Projetos Pessoais</h2>
+        <div id="Nextage">
+          <ul class="cards">
+            <li>
+              <a href="https://https://nextage.com.br" class="card">
+                <img src="img/senff.png" class="card-image" alt="" />
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
+                      <path />
+                    </svg>
+                    <div class="card-header-text">
+                      <h3 class="card-title">Senff - Nextage</h3>
+                    </div>
+                  </div>
+                    <p class="card-description">Na Nextage, trabalho como desenvolvedor fullstack, desenvolvendo e mantendo sistemas internos e externos, utilizando diversas tecnologias. <br>
+                      Um dos principais porjetos em que atuo na Nextage é o banco Senff. <br>
+                      O banco Senff fornece soluções inovadoras para o varejo, de forma simples e ágil. Conectando empresas e pessoas, possibilitando a realização de seus sonhos. <br>
+                      Meu principal objetivo nesse projeto é aprender e me consolidar como desenvolvedor, além de ajudar a empresa a alcançar seus objetivos.</p>
+                      <p class="card-description">Tecnologias utilizadas:
+                        <img id="iconsvg" src="img\icons\c-sharp.svg" alt="C#">
+                        <img id="iconsvg" src="img\icons\dotnet.svg" alt=".Net">
+                        <img id="iconsvg" src="img\icons\ruby.svg" alt="Ruby">
+                        <img id="iconsvg" src="img\icons\rails.svg" alt="Ruby on Rails">
+                        <img id="iconsvg" src="img\icons\react.svg" alt="React">
+                        <img id="iconsvg" src="img\icons\postgres.svg" alt="Postgres">
+                        <img id="iconsvg" src="img\icons\android.svg" alt="Android">
+                        <img id="iconsvg" src="img\icons\git.svg" alt="Git">
+                      </p>
+                </div>
+              </a>
+            </li>
+      </section>
 
-			<div class = "segunda">
-				<a href = "segunda-pagina.html"> 
-					<img width="100%" src="img/logo-ifpr.png">
-				</a>
-			</div>
-			<div class="segunda">
-				<a href="portifolio.html">
-					Página Teste
-				</a>
-			</div>
-		</div>
-	</body>
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </body>
 </html>
