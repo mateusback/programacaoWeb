@@ -17,7 +17,7 @@
 }
 
 .main-navigation{
-    padding: 0 15px; 
+    padding: 0 15px;
 }
 
 .main-navigation ul{
@@ -45,6 +45,7 @@
     display: inline-block;
     vertical-align: middle;
     float: left;
+    margin-right: 10%;
 }
 
 .sobre-mim{
@@ -62,4 +63,15 @@
     width: 25px;
     height: 25px;
     margin-right: 5px;
+}
+
+@media screen and (width: 768px){
+    .main-navigation ul{
+        flex-direction: column;
+    }
+    .foto-minha{
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
 }

@@ -30,12 +30,12 @@ body {
     text-decoration: none;
 }
 
-.card__image {
+.card-image {
     width: 100%;
     height: auto;
 }
 
-.card__overlay {
+.card-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -47,11 +47,11 @@ body {
     transition: .2s ease-in-out;
 }
 
-.card:hover .card__overlay {
+.card:hover .card-overlay {
     transform: translateY(0);
 }
 
-.card__header {
+.card-header {
     position: relative;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@ body {
     transition: .2s ease-in-out;
 }
 
-.card__arc {
+.card-arc {
     width: 80px;
     height: 80px;
     position: absolute;
@@ -72,32 +72,33 @@ body {
     z-index: 1;
 }
 
-.card__arc path {
+.card-arc path {
     fill: var(--surface-color);
     d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }
 
-.card:hover .card__header {
+.card:hover .card-header {
     transform: translateY(0);
 }
 
-.card__thumb {
+.card-thumb {
     flex-shrink: 0;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.card__title {
+.card-title {
     font-size: 1em;
     margin: 0 0 .3em;
     color: darkslategrey;
 }
 
-.card:hover .card__title {
-    color: white;
+.card:hover .card-title {
+    display: none;
 }
-.card__tagline {
+
+.card-tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
@@ -105,15 +106,16 @@ body {
     color: #D7BDCA;
 }
 
-.card__status {
+.card-status {
     font-size: .8em;
     color: #D7BDCA;
 }
 
-.card__description {
-    padding: 0px 2em 2em;
+.card-description {
+    padding: 0px 2% 2% 5%;
     margin: 0;
     color: black;
     font-family: "MockFlowFont";
     overflow: hidden;
+    
 }
