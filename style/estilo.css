@@ -47,8 +47,9 @@ body {
 
 }
 
-.sobre-mim{
+.infos{
     display: inline-block;
+    margin:auto;
     vertical-align: middle;
 }
 
@@ -73,4 +74,12 @@ body {
         float: none;
         margin: 0 auto;
     }
+}
+
+.titulo{
+    text-align: center;
+    color: #3d3d3d;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 0;
 }
