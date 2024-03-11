@@ -17,13 +17,12 @@ body {
   }
 
 .skills-list {
-    max-width: 600px;
     margin: 50px auto;
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .skill {
@@ -48,7 +47,7 @@ body {
 }
 
 progress {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 20px;
     border-radius: 10px;
     appearance: none;
