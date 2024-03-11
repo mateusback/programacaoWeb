@@ -141,7 +141,7 @@ progress::-webkit-progress-value {
 
 .titulo{
     text-align: left;
-    color: #3d3d3d;
+    color: #503700;
     font-size: 2em;
     margin: 0;
     padding: 20px 0;
@@ -162,7 +162,7 @@ progress::-webkit-progress-value {
     display: table;
 }
 
-#iconsvg {
+.iconsvg {
     width: 25px;
     height: 25px;
     margin-right: 5px;
