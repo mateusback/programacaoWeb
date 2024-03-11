@@ -1,3 +1,12 @@
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #f2f2f2;
@@ -10,15 +19,23 @@ body {
 .skills-list {
     max-width: 600px;
     margin: 50px auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .skill {
-    display: flex;
-    align-items: left;
+    width: 48%;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .skill-icon {
+    width: 40px;
+    height: 40px;
     margin-right: 20px;
 }
 
@@ -43,13 +60,13 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #4caf50;
+    background-color: #6f4207bf;
     border-radius: 10px;
 }
 
 .container{
     background-color: #f2f2f2;
-    max-width: 1200px;
+    max-width: 1500px;
     padding: 0 20px;
 }
 
@@ -75,17 +92,60 @@ progress::-webkit-progress-value {
     text-decoration: none;
 }
 
-
 .foto-minha{
     border-radius: 50%;
-    max-width: 300px;
-    min-width: 100px;
-    width: 10%;
+    width: 170px;
+    height: 170px;
     display: inline-block;
     vertical-align: middle;
     float: left;
-    margin-right: 10%;
+    margin-top: 2%;
+    margin-right: 2%;
+    object-fit: cover;
+}
 
+.texto-infos{
+    display: right;
+    vertical-align: middle;
+    margin-top: 2%;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.titulo-topico{
+    margin-top: 10%;
+    font-size: 1.8em;
+    margin: 0;
+    padding-top: 5%;
+    display: inline-block;
+    color: #522803;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.citacao{
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #522803;
+    
+}
+.sobre-mim{
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.titulo{
+    text-align: left;
+    color: #3d3d3d;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 0;
 }
 
 .infos{
@@ -93,7 +153,10 @@ progress::-webkit-progress-value {
     margin:auto;
     vertical-align: middle;
 }
-
+.link{
+    color: #694001;
+    text-decoration: none;
+}
 .clearfix::after{
     content: "";
     clear: both;
@@ -106,7 +169,164 @@ progress::-webkit-progress-value {
     margin-right: 5px;
 }
 
-@media screen and (width: 768px){
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+  
+.card {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: calc(var(--curve) * 1px);
+    background-color: var(--surface-color);
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.card:hover .card-overlay {
+    transform: translateY(0);
+}
+
+.card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.card-arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.card-arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card-header {
+    transform: translateY(0);
+}
+
+.card-thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #4d2702;
+}
+
+.card:hover .card-title {
+    display: none;
+}
+
+.card-tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";
+    font-size: .8em;
+    color: #D7BDCA;
+}
+
+.card-status {
+    font-size: .8em;
+    color: #D7BDCA;
+}
+
+.card-description {
+    padding: 0px 2% 2% 5%;
+    margin: 0;
+    color: black;
+    font-family: "MockFlowFont";
+    overflow: hidden;
+    font-size: calc(0.55em + 0.55vw);
+}
+#side {
+    flex-shrink: 0;
+    width: 210px;
+    position: sticky;
+    top: 0;
+    height: 109vh; 
+    background: #3d3d3d;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;  
+}
+
+#main {
+    flex-grow: 1;
+}
+  
+#side a {
+    display: block;
+    width: 100%;
+}
+  
+@media screen AND (max-width:768px) {
+    #side {
+        width: 50px;
+        height: 210vh; 
+    }
+    #side .txt {
+        display: none;
+    }
+    #side .titulo-side{
+        display: none;
+   }
+    .cards {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .skill {
+        width: 98%;
+    }
     .main-navigation ul{
         flex-direction: column;
     }
@@ -114,13 +334,57 @@ progress::-webkit-progress-value {
         display: block;
         float: none;
         margin: 0 auto;
+        margin-bottom: 2em;
+    }
+    .texto-infos{
+        display: block;
+        margin: 0 auto;
+    }
+    .sobre-mim{
+        font-size: 1.1em;
+    }
+    .card-description{
+        font-size: 0.73em;
+    }
+    #side a {
+        text-align: center;
+    }
+    #side i.ico {
+        font-size: 30px;
     }
 }
 
-.titulo{
-    text-align: center;
-    color: #3d3d3d;
-    font-size: 2em;
+.titulo-side{
+    color: #e4e4e4;
     margin: 0;
     padding: 20px 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#side, #main {
+    padding: 10px;
+}
+
+#main {
+    margin-left: 3%;
+    background: #f2f2f2;
+}
+
+#title{
+    color: rgb(105, 18, 129);
+    margin: auto;
+    text-align: center;
+}
+
+#side a, #side i {
+    color: #fff;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#side a {
+    margin-bottom: 20px;
 }

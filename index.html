@@ -21,64 +21,136 @@
   </head>
   <body>
     <header id="side">
-        <h3 class="h3">Portfólio</h3>
+        <h3 class="titulo-side">Portfólio</h3>
       <nav>
-        <a href="informacoes">
-          <i class="ico">&#128125;</i>
-          <i class="txt">informacoes</i>
+        <a href="#informacoes">
+          <i class="ico">&#128231;</i>
+          <i class="txt">Informações</i>
         </a>
 
-        <a href="#projetos">
-          <i class="ico">&#128125;</i>
-          <i class="txt">Projetos</i>
-        </a>
         <a href="#sobre-mim">
-          <i class="ico">&#128125;</i>
-          <i class="txt">Teste 2</i>
+          <i class="ico">&#128214;</i>
+          <i class="txt">Sobre Mim</i>
+        </a>
+        <a href="#projetos">
+          <i class="ico">&#128188;</i>
+          <i class="txt">Projetos</i>
         </a> 
       </nav>
     </header>
 
     <main id="main" class="container">
-      <section>
-        <h1 class = "titulo">Portfólio - Mateus Back</h1>
+      <section id="informacoes">
+        <h1 class = "titulo">Mateus F. Back</h1>
         <div id="informacoes" class="clear-fix">
           <img class = "foto-minha" src="img\foto-pessoal.png" alt="Literalmente Eu">
           <div class="infos">
-            <p class="ico"> &#128102; - Mateus Back </p>
-            <p class="ico"> &#128231; - mateusfback14@gmail.com </p>
-            <p class="ico"> &#128034; - github.com/mateusback</p>
-            <p class="ico"> &#128188; - in/mateus-back</p>
+            <p class="texto-infos"> &#128102; - Mateus Back </p>
+            <p class="texto-infos"> &#128231; - mateusfback14@gmail.com </p>
+            <p class="texto-infos"> &#128034; - github.com/mateusback</p>
+            <p class="texto-infos"> &#128188; - in/mateus-back</p>
           </div>
         </div>
       </section>
 
-      <section id="Sobre mim">
-        <h2>Sobre mim</h2>
-        <h4>An ordinary person without starting equipment but all the possibilities.</h4>
-        Graudando em Engenharia de Software no Instituto Federal do Paraná, graduado em Adminstração de Empresas pela Unespar - Universidade Estadual do Paraná<br>
-        Técnico em informática pelo Instituto Federal do Paraná, onde tive meu primeiro contato com a programação e desenvolvimento de sistemas.
-        Atualmente trabalho como desenvolvedor fullstack na Nextage, onde desenvolvo e mantenho sistemas internos e externos, utilizando diversas tecnologias.<br>
-        O principal objetivo deste protifólio é fixar conhecimentos de HTML e CSS, para obtenção parcial de conceitos para o primeiro trimestre da disciplina Programação WEB ministrada pelo professor Frank William<br>        
-        Esse projeto não tem como objetivo ser um protifólio real e me apresentar para o mercardo de trabalho, mas sim para fixar conhecimentos.<br>
-        <br> 
+      <section id="sobre-mim">
+        <div><h2 class="titulo-topico">Sobre mim</h2></div>
+        <p class="citacao">"An ordinary person without starting equipment but all the possibilities."</p>
+        <div class="sobre-mim">
+        <p>Graudando em Engenharia de Software no Instituto Federal do Paraná, graduado em Adminstração de Empresas pela Unespar - Universidade Estadual do Paraná.<br>
+        Técnico em informática pelo Instituto Federal do Paraná, onde tive meu primeiro contato com a programação e desenvolvimento de sistemas.</p>
+        <p>Atualmente trabalho como desenvolvedor fullstack na <a class="link" href="https://nextage.com.br/?utm_source=organico&utm_medium=site&utm_campaign=web">Nextage</a>, onde desenvolvo e mantenho sistemas internos e externos, utilizando diversas tecnologias.<br></p>
+        <p>O principal objetivo deste protifólio é fixar conhecimentos de HTML e CSS, para obtenção parcial de conceitos para o primeiro trimestre da disciplina Programação WEB ministrada pelo professor Frank Willian C. de Oliveira.<br>        
+        Esse projeto não tem como objetivo ser um protifólio real e me apresentar para o mercardo de trabalho, mas sim para fixar conhecimentos.</p>
+        <br>
+        </div>
       </section>
 
       <section id="Tecnologias">
-        <div class="skills-list">
-          <div class="skill">
-              <div class="skill-icon">
-                  <img src="img/icons/dotnet.svg" alt="dotnet">
-              </div>
-              <div class="skill-info">
-                  <h3>Tecnologia 1</h3>
-                  <progress value="80" max="100"></progress>
-              </div>
-          </div>
+        <div><h2 class="titulo-topico">Tecnologias</h2></div>
+        <ul class="skills-list">
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/java.svg" alt="Java Icone">
+            <div class="skill-info">
+              <h3>Java</h3>
+              <progress value="55" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/c-sharp.svg" alt="C# Icone">
+            <div class="skill-info">
+              <h3>C#</h3>
+              <progress value="65" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/mysql.svg" alt="MySql Icone">
+            <div class="skill-info">
+              <h3>MySql</h3>
+              <progress value="78" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/postgres.svg" alt="Postgres Icone">
+            <div class="skill-info">
+              <h3>PostGres</h3>
+              <progress value="79" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/android.svg" alt="Android Icone">
+            <div class="skill-info">
+              <h3>Android</h3>
+              <progress value="32" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/git.svg" alt="Git Icone">
+            <div class="skill-info">
+              <h3>Git</h3>
+              <progress value="77" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/python.svg" alt="Python Icone">
+            <div class="skill-info">
+              <h3>Python</h3>
+              <progress value="67" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/ruby.svg" alt="Ruby Icone">
+            <div class="skill-info">
+              <h3>Ruby</h3>
+              <progress value="19" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/react.svg" alt="React Icone">
+            <div class="skill-info">
+              <h3>React</h3>
+              <progress value="20" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/css.svg" alt="CSS Icone">
+            <div class="skill-info">
+              <h3>CSS</h3>
+              <progress value="20" max="100"></progress>
+            </div>
+          </li> 
+          <li class="skill">
+            <img class="skill-icon" src="img/icons/html.svg" alt="HTML Icone">
+            <div class="skill-info">
+              <h3>HTML</h3>
+              <progress value="50" max="100"></progress>
+            </div>
+          </li> 
+      </ul>
       </section>
 
       <section id="projetos">
-          <h2>Projetos</h2>
+        <div><h2 class="titulo-topico">Projetos</h2></div>
           <div id="Farm Invaders">
             <ul class="cards">
               <li>
@@ -186,7 +258,7 @@
     </main>
 
     <footer>
-
+      <!--None-->
     </footer>
 
   </body>
