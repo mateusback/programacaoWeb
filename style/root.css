@@ -1,7 +1,13 @@
 [data-theme="dark"] {
-    --text-color:  #e8c374;
+    --text-color:  #ffffff;
+    --background-color: #392200;
+    --background-color-secondary: #482a00;
+    --sidebar-color: hsl(36, 100%, 5%);
   }
 
 [data-theme="light"] {
     --text-color:  #503700;
+    --background-color: #ffe3ba;
+    --background-color-secondary: #fff2de;
+    --sidebar-color: #664109;
 }

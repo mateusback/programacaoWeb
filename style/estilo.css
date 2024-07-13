@@ -1,3 +1,5 @@
+@import url('root.css');
+
 :root {
     --surface-color: #fff;
     --curve: 40;
@@ -9,12 +11,13 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: #f2f2f2;
+    background-color: var(--background-color);
     display: flex;
     padding: 0;
     margin: 0;
     min-height: 100vh;
-  }
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);;
+}
 
 .skills-list {
     margin: 50px auto;
@@ -64,7 +67,7 @@ progress::-webkit-progress-value {
 }
 
 .container{
-    background-color: #f2f2f2;
+    background-color: var(--background-color);
     max-width: 1500px;
     padding: 0 20px;
 }
@@ -286,7 +289,7 @@ progress::-webkit-progress-value {
     position: sticky;
     top: 0;
     height: 109vh; 
-    background: #3d3d3d;
+    background: var(--sidebar-color);
     display: flex;
     flex-direction: column;
 }
@@ -307,14 +310,17 @@ progress::-webkit-progress-value {
 @media screen AND (max-width:768px) {
     #side {
         width: 50px;
-        height: 210vh; 
+        height: 210vh;
+    
     }
     #side .txt {
         display: none;
     }
+
     #side .titulo-side{
         display: none;
-   }
+    }
+
     .cards {
         grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
@@ -353,7 +359,7 @@ progress::-webkit-progress-value {
 }
 
 .titulo-side{
-    color: #e4e4e4;
+    color: #e6e1e1;
     margin: 0;
     padding: 20px 0;
 }
@@ -367,8 +373,10 @@ progress::-webkit-progress-value {
 }
 
 #main {
-    margin-left: 3%;
-    background: #f2f2f2;
+    background-color: var(--background-color-secondary);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #title{
