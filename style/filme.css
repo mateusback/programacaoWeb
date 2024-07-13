@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .page-title{
     padding-top: 2em;
     color: #522803;
@@ -133,49 +128,4 @@
     color: #83714b;
     font-size: 90%;
     margin-left: 1em;
-}
-
-.top-bar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e4a649;
-    padding-bottom: 1em;
-}
-
-.top-bar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #522803;
-    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    text-align: center;
-    margin-left: 20px;
-}
-
-.top-bar nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.top-bar nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.top-bar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.top-bar nav ul li a:hover {
-    text-decoration: underline;
-}
-
-
-.icon{
-    width: 1.5em;
-    height: 1.5em;
 }
