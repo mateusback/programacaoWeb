@@ -9,7 +9,17 @@
 <body>
     <div class = container>
       <header>
-        <h1 class="page-title">Teste</h1>
+        <div class="top-bar">
+          <div class="container">
+            <span class="logo">Feramentas</span>
+            <button class="toggle-btn" id="sidebarToggle">
+                <a href="index.html"><img class="icon" src="img/icons/back-arrow.svg" alt="Voltar"></a>
+          </button>
+          </div>
+        </div>
+
+
+        <h1 class="page-title">Obter um filme aleatório</h1>
 
         <div class="checkbox-w">
             <input type="checkbox" class="check" id="check1-61"/>
@@ -20,11 +30,11 @@
                   <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4 " stroke="brown" stroke-width="3" fill="none" class="path1" />
                 </g>
               </svg>
-              <span class="checkbox-text">Teste checkbox</span>
+              <span class="checkbox-text">Eu confio no criador deste site.</span>
             </label>
         </div>
 
-        <button class="botao" onclick="getRandomMovie()">Testar</button> <br>
+        <button class="botao" onclick="getRandomMovie()">Obter Filme</button> <br>
       </header>
 
         <div class="box-filme" hidden="true">
