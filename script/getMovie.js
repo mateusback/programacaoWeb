@@ -6,7 +6,7 @@ async function getRandomMovie() {
     try {
         if(isChecked == false){
             const randomId = Math.floor(Math.random() * 1000000);
-            response = await fetch(`https://www.omdbapi.com/?i=tt${String(randomId).padStart(7, '0')}&apikey=${apiKey}`);
+            response = await fetch(`https://www.omdbapi.com/?i=tt${String(randomId).padStart(7, '0')}&apikey=${apiKey}&plot=full`);
         }
         else{
             const osBao = ['tt0083658','tt1856101','tt12037194', 'tt27503384', 'tt13238346', 'tt10640346', 'tt11813216', 'tt2458948', 'tt8503618',
@@ -14,7 +14,7 @@ async function getRandomMovie() {
                 'tt0109830', 'tt3783958', 'tt8579674', 'tt0098635', 'tt0093191', 'tt0050083', 'tt0043014', 'tt0169858', 'tt8613070', 'tt14376344'
             ];
             const randomBao = osBao[Math.floor(Math.random() * osBao.length)];
-            response = await fetch(`https://www.omdbapi.com/?i=${randomBao}&apikey=${apiKey}`);
+            response = await fetch(`https://www.omdbapi.com/?i=${randomBao}&apikey=${apiKey}&plot=full`);
         }
         
         const data = await response.json();
@@ -30,9 +30,8 @@ async function getRandomMovie() {
             document.getElementById('genero-filme').textContent = `Generos: ${data.Genre}`;
             document.getElementsByClassName('box-filme')[0].hidden = false;
             if(data.Poster === "N/A")
-                document.getElementById('poster').hidden = true;
-            else
-                document.getElementById('poster').hidden = false;
+                document.getElementById('poster').src = "img/placeholder.png";
+            document.getElementById('poster').hidden = false;
         } else {
             getRandomMovie();
         }
