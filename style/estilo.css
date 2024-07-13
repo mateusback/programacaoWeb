@@ -97,7 +97,6 @@ progress::-webkit-progress-value {
     height: 170px;
     display: inline-block;
     vertical-align: middle;
-    float: left;
     margin-top: 2%;
     margin-right: 2%;
     object-fit: cover;
