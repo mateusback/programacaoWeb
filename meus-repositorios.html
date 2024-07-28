@@ -3,24 +3,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/top-bar.css">
+    <link rel="stylesheet" href="style/ferramentas.css">
     <title>Consulta de Repositórios</title>
 </head>
 <body>
     <div class="top-bar">
         <div class="container">
           <span class="logo">Feramentas</span>
+          <div class="loading-container" hidden>
+            <img class="theme" src="img/icons/theme.svg" alt="Alterar Tema" onclick="switchTheme()">
+          </div>
           <button class="toggle-btn" id="sidebarToggle">
               <a href="index.html"><img class="icon" src="img/icons/back-arrow.svg" alt="Voltar"></a>
         </button>
         </div>
       </div>
     <div class = container>
-        <h1>Consulta de Repositórios</h1>
-        <input type = "text" id="inputNomeUsuario" placeholder="Informe o nome do usuário"/>
-        <button onclick="consultarRepositorios()">Consultar Repositórios</button> 
+        <h1 class="title">Consulta de Repositórios</h1>
+        <div class="input-container">
+            <input type="text" id="inputNomeUsuario" placeholder="Informe o nome do usuário"/>
+        </div>
+        <button class="btn-acao" onclick="consultarRepositorios()">Consultar Repositórios</button> 
+        <div class="loading-container" hidden>
+            <img class="loading" src="img/icons/loading.svg" alt="Carregando" hidden>
+        </div>
         <span id="statusPesquisa"></span>
         <ul id="listaRepositorios"></ul>
     </div>
-    <script src="script/script.js"></script>
+    <script src="script\getRepos.js"></script>
+    <script src="script\swtichTheme.js"></script>
 </body>
 </html>

@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/top-bar.css">
-    <title>Consulta de IP</title>
+    <link rel="stylesheet" href="style/ferramentas.css">
+    <title class="title">Consulta de IP</title>
     
 </head>
 <body>
     <div class="top-bar">
         <div class="container">
           <span class="logo">Feramentas</span>
+          <div class="loading-container" hidden>
+            <img class="theme" src="img/icons/theme.svg" alt="Alterar Tema" onclick="switchTheme()">
+          </div>
           <button class="toggle-btn" id="sidebarToggle">
               <a href="index.html"><img class="icon" src="img/icons/back-arrow.svg" alt="Voltar"></a>
         </button>
         </div>
       </div>
     <div class = container>
-        <h1>Consulta de IP</h1>
-        <button onclick="getPublicIP()">Obter meu IP</button> <br>
-        <span id="ip"></span> 
+        <h1 class="title">Consulta de IP</h1>
+        <button class="btn-acao" onclick="getPublicIP()">Obter meu IP</button> <br>
+        <div class="loading-container" hidden>
+            <img class="loading" src="img/icons/loading.svg" alt="Carregando" hidden>
+        </div>
+        <p id="ip" hidden></p> 
     </div>
     <script src="script/getIp.js"></script>
+    <script src="script\swtichTheme.js"></script>
 </body>
 </html>

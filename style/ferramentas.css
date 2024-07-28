@@ -1,0 +1,89 @@
+.title{
+    font-size: 2em;
+    color: var(--title-color);
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+body {
+    color: var(--text-color);	
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-acao{
+    background-color: var(--button-color);
+    border-radius: 10em;
+    box-shadow: rgba(94, 30, 0, 0.2) 0 -25px 18px -14px inset,
+                rgba(94, 30, 0, 0.15) 0 1px 2px,
+                rgba(94, 30, 0, 0.15) 0 2px 4px,
+                rgba(94, 30, 0, 0.15) 0 4px 8px,
+                rgba(94, 30, 0, 0.15) 0 8px 16px,
+                rgba(94, 30, 0, 0.15) 0 16px 32px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 0.7em 2em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 1.6em;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#ip{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    border-radius: 0.5em;
+    box-shadow: var(--sidebar-color) 0px 2px 8px 0px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputNomeUsuario {
+    margin: 0;
+    display: block;
+    border-radius: 0.5em;
+    background-color: var(--input-color);
+    border: none;
+    box-shadow: var(--sidebar-color) 0px 2px 8px 0px;
+    padding: 0.5em;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.loading {
+    text-align: center;
+}
+.theme{
+    padding-top: 0.2em;
+    height: 50%;
+    width: 50%;
+}

@@ -10,14 +10,14 @@
     <meta name="revisit-after" content="7 days">
     <meta name="language" content="Portuguese">
     <meta name="generator" content="Visual Studio Code">
-    <meta name="theme-color" content="#000000">
 
     <meta property="og:title" content="Atividade Avaliativa - Portfólio - Mateus Back">
     <meta property="og:description" content="Portfólio desenvolvido como requisito para obtenção parcial do conceito do primeiro trimestre de Programação Web">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style/estilo.css">
+    <link rel="stylesheet" href="style/switch-theme.css">
   </head>
-  <body data-theme="light">
+  <body>
     <header id="side">
         <h3 class="titulo-side">Portfólio</h3>
       <nav>
@@ -39,7 +39,7 @@
         </a> 
         <h3 class="titulo-side">Ferramentas</h3>
         <a href="/obter-filme.html">
-          <i class="ico">&#x1F39E;</i>
+          <i class="ico">&#127909;</i>
           <i class="txt">Filme</i>
         </a> 
         <a href="/meu-ip.html">
@@ -50,10 +50,9 @@
           <i class="ico">&#128187;</i>
           <i class="txt">Repositórios</i>
         </a> 
+        <button class="theme-switch" onclick="switchTheme()"> Trocar Tema </button>
       </nav>
     </header>
-
-    <button class="theme-switch" onclick="switchTheme()"></button>
 
     <main id="main" class="container">
       <section id="informacoes">
@@ -134,7 +133,7 @@
             <img class="skill-icon" src="img/icons/ruby.svg" alt="Ruby Icone">
             <div class="skill-info">
               <h3>Ruby</h3>
-              <progress value="19" max="100"></progress>
+              <progress value="33" max="100"></progress>
             </div>
           </li> 
           <li class="skill">

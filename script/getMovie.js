@@ -1,4 +1,7 @@
 async function getRandomMovie() {
+    document.getElementsByClassName('loading-container')[0].hidden = false;
+    document.getElementsByClassName('loading')[0].hidden = false;
+    document.getElementsByClassName('box-filme')[0].hidden = true;
     const apiKey = 'thewdb';
     const checkbox = document.getElementById('check1-61');
     const isChecked = checkbox.checked;
@@ -20,6 +23,8 @@ async function getRandomMovie() {
         const data = await response.json();
         
         if (data.Response === "True") {
+            document.getElementsByClassName('loading-container')[0].hidden = true;
+            document.getElementsByClassName('loading')[0].hidden = true;
             document.getElementById('nome-filme').textContent = `${data.Title}`;
             document.getElementById('ano-filme').textContent = `${data.Year}`;
             document.getElementById('pais-filme').textContent = `${data.Country}`;
@@ -38,5 +43,7 @@ async function getRandomMovie() {
     } catch (error) {
         console.error('Erro ao obter filme:', error);
         document.getElementById('filme').textContent = 'Erro ao obter filme';
+        document.getElementsByClassName('loading-container')[0].hidden = true;
+        document.getElementsByClassName('loading')[0].hidden = true;
     }
 }

@@ -10,13 +10,14 @@
 }
 
 body {
+    color: var(--text-color);	
     font-family: 'Noto Sans JP', sans-serif;
     background-color: var(--background-color);
     display: flex;
     padding: 0;
     margin: 0;
     min-height: 100vh;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .skills-list {
@@ -57,44 +58,44 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-    background-color: #e0e0e0;
+    background-color: var(--skills-color-secondary);
     border-radius: 10px;
 }
 
 progress::-webkit-progress-value {
-    background-color: #6f4207bf;
+    background-color: var(--skills-color);
     border-radius: 10px;
 }
 
-.container{
+.container {
     background-color: var(--background-color);
     max-width: 1500px;
     padding: 0 20px;
 }
 
-#centered-image{
+#centered-image {
     display: block;
     margin-left: none;
     margin-right: auto;
     width: 20%;
 }
 
-.main-navigation{
+.main-navigation {
     padding: 0 15px;
 }
 
-.main-navigation ul{
+.main-navigation ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
 
-.main-navigation a{
+.main-navigation a {
     color: hotpink;
     text-decoration: none;
 }
 
-.foto-minha{
+.foto-minha {
     border-radius: 50%;
     width: 170px;
     height: 170px;
@@ -105,7 +106,7 @@ progress::-webkit-progress-value {
     object-fit: cover;
 }
 
-.texto-infos{
+.texto-infos {
     display: right;
     vertical-align: middle;
     margin-top: 2%;
@@ -116,24 +117,25 @@ progress::-webkit-progress-value {
     font-weight: lighter;
 }
 
-.titulo-topico{
+.titulo-topico {
     margin-top: 10%;
     font-size: 1.8em;
     margin: 0;
     padding-top: 5%;
     display: inline-block;
-    color: #522803;
+    color: var(--title-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.citacao{
+
+.citacao {
     font-size: 0.9em;
     line-height: 1.5;
     margin-bottom: 20px;
     text-align: right;
-    color: #522803;
-    
+    color: var(--quotation-color);
 }
-.sobre-mim{
+
+.sobre-mim {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -141,24 +143,26 @@ progress::-webkit-progress-value {
     font-weight: lighter;
 }
 
-.titulo{
+.titulo {
     text-align: left;
-    color: #503700;
+    color: var(--tile-color);
     font-size: 2em;
     margin: 0;
     padding: 20px 0;
 }
 
-.infos{
+.infos {
     display: inline-block;
-    margin:auto;
+    margin: auto;
     vertical-align: middle;
 }
-.link{
-    color: #694001;
+
+.link {
+    color: var(--link-color);
     text-decoration: none;
 }
-.clearfix::after{
+
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
@@ -180,11 +184,11 @@ progress::-webkit-progress-value {
     animation: fadeIn 1s ease-in-out;
 }
 
-@keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 1;}
-  }
-  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .card {
     position: relative;
     display: block;
@@ -283,6 +287,7 @@ progress::-webkit-progress-value {
     overflow: hidden;
     font-size: calc(0.55em + 0.55vw);
 }
+
 #side {
     flex-shrink: 0;
     width: 210px;
@@ -294,30 +299,30 @@ progress::-webkit-progress-value {
     flex-direction: column;
 }
 
-.hidden{
+.hidden {
     display: none;  
 }
 
 #main {
     flex-grow: 1;
 }
-  
+
 #side a {
     display: block;
     width: 100%;
 }
-  
-@media screen AND (max-width:768px) {
+
+@media screen and (max-width:768px) {
     #side {
         width: 50px;
         height: 210vh;
-    
     }
+
     #side .txt {
         display: none;
     }
 
-    #side .titulo-side{
+    #side .titulo-side {
         display: none;
     }
 
@@ -328,37 +333,45 @@ progress::-webkit-progress-value {
     .card {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
     .skill {
         width: 98%;
     }
-    .main-navigation ul{
+
+    .main-navigation ul {
         flex-direction: column;
     }
-    .foto-minha{
+
+    .foto-minha {
         display: block;
         float: none;
         margin: 0 auto;
         margin-bottom: 2em;
     }
-    .texto-infos{
+
+    .texto-infos {
         display: block;
         margin: 0 auto;
     }
-    .sobre-mim{
+
+    .sobre-mim {
         font-size: 1.1em;
     }
-    .card-description{
+
+    .card-description {
         font-size: 0.73em;
     }
+
     #side a {
         text-align: center;
     }
+
     #side i.ico {
         font-size: 30px;
     }
 }
 
-.titulo-side{
+.titulo-side {
     color: #e6e1e1;
     margin: 0;
     padding: 20px 0;
@@ -379,7 +392,7 @@ progress::-webkit-progress-value {
     padding-right: 2%;
 }
 
-#title{
+#title {
     color: rgb(105, 18, 129);
     margin: auto;
     text-align: center;

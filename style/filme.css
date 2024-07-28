@@ -1,6 +1,14 @@
+@import url('root.css');
+
+body{
+    margin: 0;
+    background-color: var(--background-color);
+    padding: 0;
+}
+
 .page-title{
     padding-top: 0.5em;
-    color: var(----text-color);
+    color: var(--text-color);
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     text-align: center;
 }
@@ -19,7 +27,7 @@
 }
 
 .botao{
-    background-color: #e4a649;
+    background-color: var(--button-color);
     border-radius: 10em;
     box-shadow: rgba(94, 30, 0, 0.2) 0 -25px 18px -14px inset,
                 rgba(94, 30, 0, 0.15) 0 1px 2px,
@@ -27,7 +35,7 @@
                 rgba(94, 30, 0, 0.15) 0 4px 8px,
                 rgba(94, 30, 0, 0.15) 0 8px 16px,
                 rgba(94, 30, 0, 0.15) 0 16px 32px;
-    color: rgb(104, 55, 0);
+    color: var(--text-color);
     cursor: pointer;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     padding: 0.7em 2em;
@@ -56,12 +64,13 @@
                 rgba(129, 52, 0, 0.25)  0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
 }
+
 .box-titulo{
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
     align-items: center;
     margin: 2em 10% 2em 10%;
     padding: 1em;
-    background-color: rgb(245, 242, 233);
+    background-color: var(--background-color-secondary); 
 }
 
 .box-filme{
@@ -69,7 +78,8 @@
     align-items: center;
     margin: 2em 10% 2em 10%;
     padding: 1em;
-    background-color: rgb(244, 231, 197);
+    background-color: var(--background-color-secondary);
+    color: var(--text-color);   
 }
 
 .header-filme{
@@ -81,17 +91,17 @@
 
 #nome-filme{
     font-size: 2em;
-    color: #503700;
+    color: var(--title-color);
     margin: 0;
 }
 
 #nome-filme:hover{
-    color: #c9831a;
+    color:var(--link-color);
 }
 
 #ano-filme{
     font-size: small;
-    color: #83714b;
+    color: var(--text-color);
 }
 
 .checkbox-w input[type="checkbox"] {
@@ -132,7 +142,11 @@
 }
 
 .checkbox-text{
-    color: #83714b;
+    color: var(--link-color);
     font-size: 90%;
     margin-left: 1em;
+}
+
+.checkbox-w .checkbox-rect {
+    stroke: var(--link-color);
 }

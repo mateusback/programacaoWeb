@@ -1,0 +1,25 @@
+.theme-switch {
+    border-radius: 20%;
+    margin-top: 1em;
+    background-color: var(--button-color);
+    border-radius: 10em;
+    box-shadow: rgba(94, 30, 0, 0.2) 0 -25px 18px -14px inset,
+                rgba(94, 30, 0, 0.15) 0 1px 2px,
+                rgba(94, 30, 0, 0.15) 0 2px 4px,
+                rgba(94, 30, 0, 0.15) 0 4px 8px,
+                rgba(94, 30, 0, 0.15) 0 8px 16px,
+                rgba(94, 30, 0, 0.15) 0 16px 32px;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.7em 2em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 1em;
+    user-select: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
