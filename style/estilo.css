@@ -279,6 +279,15 @@ progress::-webkit-progress-value {
     color: #D7BDCA;
 }
 
+.tema{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    margin-left: 30%;
+    margin-top: 50%;
+}
+
 .card-description {
     padding: 0px 2% 2% 5%;
     margin: 0;
@@ -313,6 +322,13 @@ progress::-webkit-progress-value {
 }
 
 @media screen and (max-width:768px) {
+    .tema{
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        margin: 0;
+    }
+
     #side {
         width: 50px;
         height: 210vh;
